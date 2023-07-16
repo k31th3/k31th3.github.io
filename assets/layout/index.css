@@ -1,0 +1,95 @@
+
+body	
+{
+	margin: auto;	
+	max-width: 1600px;
+}
+
+#container	{
+	display: none
+}
+
+#main-bar
+{
+	height: 100vh;
+	overflow: auto
+}
+
+#main-bar::-webkit-scrollbar {
+	width: 0px !important;	
+}
+
+#main-bar::-webkit-scrollbar-thumb
+{
+	background-color: transparent;
+}
+
+/*Loading*/
+
+.lds-ring 
+{  
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform: -webkit-translate(-50%, -50%);
+	transform: -moz-translate(-50%, -50%);
+	transform: -ms-translate(-50%, -50%);
+}
+
+.lds-ring div 
+{
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: auto;
+	border: 8px solid #A76B50;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #A76B50 transparent transparent transparent; /*#1cce00a6*/
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.lds-ring div:nth-child(1) { animation-delay: -0.45s }
+.lds-ring div:nth-child(2) { animation-delay: -0.3s }
+.lds-ring div:nth-child(3) { animation-delay: -0.15s }
+
+@keyframes lds-ring {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+}
+
+.navbar-toggler:focus
+{
+	box-shadow: 0 0 0 0.10rem;
+}
+
+.nav-bar-right .active
+{
+	background-color: #cf8044 !important;
+	border-radius: 0px !important;
+	color: #fff;
+}
+
+.nav-bar-right .active:active,
+.nav-bar-right .active:focus
+{
+	background-color: #cf8044b3 !important;
+	color: #fff
+}
+
+/* color  */
+
+.c-brown
+{
+	color: #cf8044 !important;
+}
