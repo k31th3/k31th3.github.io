@@ -1,1 +1,40 @@
-<p>Hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Porfolio</title>
+	<link rel="stylesheet" href="assets/bootstrap/index.css">
+	<script src="assets/bootstrap/popper.min.js"></script>
+	<script src="assets/bootstrap/index.js"></script>
+	<link rel="stylesheet" href="assets/remixicon/index.css">
+	<link rel="stylesheet" href="assets/animate/index.css">
+
+	<script src="assets/jquery.js"></script>
+	<script src="assets/index.js"></script>
+
+	<!-- css layout -->
+	<link rel="stylesheet" href="assets/layout/index.css">
+
+</head>
+<body class="overflow-hidden">
+
+<div id="container">
+	
+	<nav class="nav navbar-expand-lg bg-body-tertiary px-5 py-3"></nav>
+
+	<main class="container-fluid" id="main-bar"></main>
+
+	<footer></footer>
+</div>
+
+<script>
+
+	route('layout/nav.html', 'nav');
+	route('layout/main-bar.html', 'main');
+	route('layout/footer.html', 'footer');
+
+</script>
+
+<script src="assets/layout/index.js"></script>	
